@@ -196,7 +196,7 @@ header > ul > li > label
     {padding:0;}
 }
 
-@media (min-width:305px) and (max-width:415px)
+@media (min-width:305px) and (max-width:430px)
 {
     header > h2
     {
@@ -204,6 +204,34 @@ header > ul > li > label
     }
 
     header > ul
+    {
+        font-size:90%;
+    }
+
+    #tabButton
+    {
+        width:18%;
+        height:68px;
+    }
+}
+
+@media (min-width:290px) and (max-width:320px)
+{
+    header > h2
+    {
+        font-size:100%;
+    }
+
+    #tabButton
+    {
+        width:19%;
+        height:65px;
+    }
+}
+
+@media (max-width:290px)
+{
+    header > h2
     {
         font-size:90%;
     }
