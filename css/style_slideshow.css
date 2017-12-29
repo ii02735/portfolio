@@ -1,0 +1,140 @@
+#slideshow
+{
+	background:black;
+	margin:10px;
+	width:90vw;
+	height:40vw;
+	overflow:hidden;
+	display: grid;
+	grid-template-columns: 100% 100% 100%;
+	align-items: center;
+	position:relative;
+	margin:0 auto;
+	box-sizing: border-box;
+}
+
+#slideshow > div
+{	
+	position:relative;
+	align-content: center;
+	align-self: center;
+	margin:0 auto;
+	
+
+}
+
+#slideshow img
+{
+	display: flex;
+	width: 80%;
+	margin:0 auto;
+	-webkit-filter:brightness(40%);
+}
+
+
+#chrono img
+{
+	width:90vw;
+}
+
+.prev,.next
+{
+	background:rgba(255,255,255,0);
+	cursor: pointer;
+	position:absolute;
+	top:50%;
+	padding: 16px;
+ 	margin-top: -22px;
+ 	font-weight: bolder;
+ 	width:auto;
+ 	transition:background 0.2s;
+ 	z-index:500;
+}
+
+.prev:hover,.next:hover
+{
+	background:rgba(255,255,255,0.2);
+}
+
+.next
+{
+	right:0;
+}
+
+.infoTexte
+{
+	background:rgba(42,42,42,1);
+	position:absolute;
+	bottom:50%;
+	top:50%;
+	width:100%;
+	text-align: center;
+}
+.prev:nth-child(8),.next:nth-child(9)
+{
+	display:none;
+}
+
+input[type="radio"]
+{
+	display: none;
+}
+#slideshow h2
+{
+	text-align: center;
+	margin:-2% auto;
+}
+#creation{display:block;}
+#chrono #maquette{display:none;}
+
+label[for="toFrise"],label[for="toMaq"],label[for="toDraw"]{display: none;}
+
+#toFrise:checked ~ #creation,#toFrise:checked ~ #maquette{display:none;}
+#toDraw:checked ~ #chrono,#toDraw:checked ~ #maquette{display:none;}
+#toMaq:checked ~ #chrono,#toMaq:checked ~ #creation{display:none;}
+
+#toFrise:checked ~ label[for="toFrise"]{display: none;}
+#toFrise:checked ~ label:nth-child(9),
+#toFrise:checked ~ label:nth-child(10){display: block;}
+#toDraw:checked ~ label[for="toDraw"]{display:none;}
+#toDraw:checked ~ label:nth-child(7),
+#toDraw:checked ~ label:nth-child(8){display: block;}
+#toMaq:checked ~ label[for="toMaq"]{display: none;}
+#toMaq:checked ~ label:nth-child(11),
+#toMaq:checked ~ label:nth-child(12){display: block;}
+#toFrise:checked ~ div,#toDraw:checked ~ div,#toMaq:checked ~ div
+{
+	animation: forward 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes forward
+{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+
+@media (max-width:895px)
+{
+	#slideshow h2
+	{
+		margin:-4% auto;
+	}
+}
+
+@media (min-width:510px) and (max-width:600px)
+{
+	#slideshow h2
+	{
+		font-size:130%;
+	}
+}
+
+@media (max-width:500px)
+{
+	#slideshow h2
+	{
+		font-size:80%;
+	}
+}
