@@ -23,6 +23,7 @@ header
     position:fixed;
     width:100%;
     margin:0;
+    top:0;
     padding:0;
       -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
