@@ -46,42 +46,47 @@ section:nth-child(1)
 	justify-items: center;
 }
 
-#squares div
+#squares > div
 {
 	background:#182338;
-	width:400px;
+	width:240px;
 	height:240px;
 	margin-bottom:20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display:flex;
 }
 
 
 
-#squares h3
+#squares .title
 {
+	grid-column: 1/4;
+	width:100%;
 	text-align: center;
-	grid-column: 2/4;
-	width:100%;
+	justify-self:center;
 }
 
-#squares > div img
+#squares > div > img
 {	
-	position: relative;
-	width:100%;
-	margin-left:20px;
-	grid-column:1/2;
+	width:125px;
+	align-self: center;
 }
 
-#squares > div > ul
+#squares > div > h3
 {
+	align-self: center;
 	grid-column:2/4;
-	margin-left:20px;
+}
+
+#squares .meter
+{
+	width:100%;
+	height:15px;
+	border:1px solid white;
 }
 
 .title
 {
-	grid-column: 1/4;
+	grid-column: 1/3;
 	text-align: center;
 }
 
