@@ -30,6 +30,10 @@
 	-webkit-filter:brightness(40%);
 }
 
+#creation img
+{
+	width:72vw;
+}
 
 #chrono img
 {
