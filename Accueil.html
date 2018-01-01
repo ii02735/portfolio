@@ -1,8 +1,11 @@
 <html lang="fr-FR">
     <head>
-        <title>Muhammad YADALLEE - Accueil -</title>
+        <title>Muhammad YADALLEE</title>
         <meta charset="utf-8">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style_tab.css" rel="stylesheet" type="text/css">
+        <link href="css/style_slideshow.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="fonts">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
@@ -29,7 +32,8 @@
         <main>
             <section>
                 <article>
-                <h2 class="title">Mes principes</h2>
+                <h2 class="maintitle">Bienvenue !</h2>
+                <h3 class="title">Un bref récapitulatif sur mes principes</h3>
                 <nav id="slideshow">
                     <input type="radio" name="changePict" id="toDraw" checked="checked">
                     <input type="radio" name="changePict" id="toFrise">
@@ -61,6 +65,7 @@
                         <img src="./img/html5-logo.png">
                         <div class="meter"><span></span></div>
                     </div>
+
                     <div>
                         <h3 class="language">CSS3</h3>
                         <img src="./img/css3-logo.png">
@@ -69,14 +74,38 @@
                     <div>
                         <h3 class="language">Javascript</h3>
                         <img src="./img/javascript-logo.png">
-                        <div class="meter"><span></span></div>
+                        <div class="meter">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>Contenu</li>
+                            <li>Mise en place du <i>CSS Hack</i></li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <ul>
+                            <li>CSS Grid</li>
+                            <li>Flexbox</li>
+                            <li>Slideshow</li>
+                            <li><i>CSS Hack*</i></li>
+                            <li>Mediaqueries</li>
+                        </ul>
+                        <p id="csshack">*Modification du CSS à l'aide de l'attribut <code>:checked</code> des boutons radios et des checkbox.<br><b>Évite l'utilisation du Javascript.</b></p>
+                    </div>
+                    <div class="details">
+                        <p id="js">
+                            Utilisation du D.O.M sur les boutons de navigation
+                        </p>
                     </div>
                 </div>
-                
-                </article>
-    
-                <article>
 
+                </div>
+                </article>
+                <article id="message">
+                    <h2 class="title">Ma présentation</h2>
+                    <p>En 3 points je suis une personne...</p>
                 </article>
     
                 </section>
