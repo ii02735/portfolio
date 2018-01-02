@@ -6,6 +6,10 @@ body
     background-color:#19253A;
 }
 
+section
+{
+	overflow:hidden;
+}
 .maintitle
 {
 	text-align: center;
@@ -28,14 +32,18 @@ section
 	padding:0;
 	margin:0;
 	width:100%;
+	border-bottom: 10px solid #2F3849;
 }
 
 article
 {
-	border-bottom: 10px solid #2F3849;
+	border-bottom: 3px solid #2F3849;
 }
 
-section:nth-child(even){background:#152033;}
+
+
+section:nth-child(odd){background:#152033;}
+section:nth-child(even){background:#111a2b;}
 section:nth-child(1)
 {
 	justify-content: center;
@@ -76,9 +84,7 @@ section:nth-child(1)
 
 #squares > div > h3
 {
-	-webkit-margin-after:0.5em;
 	-webkit-margin-after:0;
-	-moz-margin-after:0.5em;
 	-moz-margin-after:0;
 	align-self: start;
 	grid-column: 1/4;
