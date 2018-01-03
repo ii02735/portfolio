@@ -17,6 +17,7 @@ section
 
 li > label
 {
+	cursor:pointer;
 	font-size:80%;
 }
 
@@ -329,6 +330,76 @@ section:nth-child(1)
 {
 	margin: 20px 0;
 }
+
+
+#proposals
+{
+	display: grid;
+	justify-content: start;
+}
+
+
+.main
+{
+	cursor:pointer;
+	list-style-type: none;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.main li
+{
+	list-style-type:none;
+}
+.main:hover
+{
+	cursor:pointer;
+}
+
+#software,#web,#bdd
+{
+	display:inline;
+}
+
+#software label,
+#web label,
+#bdd label
+{
+	cursor:pointer;
+}
+
+#proposals, #proposals .sub, #proposals
+{
+	position: relative;
+}
+
+.main #sub
+{
+	font-size:90%;
+	margin:5px 0px;
+}
+
+.main .sub2
+{
+	font-size: 90%;
+	margin:8px 0px;
+}
+
+.main .sub2 li
+{
+	margin:8px 0px;
+}
+
+.main .sub > li:before,.main .sub > li:after
+{
+	content:" ";
+	position: absolute;
+	width: 6px;
+	top:8px;
+	border-left:1px solid white;
+	
+}
+
 @media only screen (max-width: 300px)
 {
 	.prev,.next
