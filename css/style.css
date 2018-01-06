@@ -1,9 +1,21 @@
+@font-face{
+	font-family: Ubuntu-Regular;
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
 body
 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu-Regular';
     margin:0;
     padding:0;
     background-color:#19253A;
+	position:relative;
+}
+
+footer{
+	position:absolute;
+	bottom:0;
+	top:100%;
 }
 
 section
