@@ -18,7 +18,7 @@ function amountscrolled(){
 
 window.addEventListener("scroll",
 	function(){
-		if(amountscrolled() > 50)
+		if(amountscrolled() >= 39)
 		{
 			document.getElementById("skills").checked = "checked";
 		}
