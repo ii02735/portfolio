@@ -18,11 +18,19 @@ function amountscrolled(){
 
 window.addEventListener("scroll",
 	function(){
-		if(amountscrolled() >= 39)
+		if(amountscrolled() >= 13)
 		{
 			document.getElementById("skills").checked = "checked";
 		}
-		else
+		if(amountscrolled() >= 30)
+		{
+			document.getElementById("works_btn").checked = "checked";
+		}
+		if(amountscrolled() >= 98)
+		{
+			document.getElementById("more").checked = "checked";
+		}
+		if(amountscrolled() <= 13)
 		{
 			document.getElementById("accueil").checked = "checked";
 		}
