@@ -16,7 +16,7 @@
             <input type="checkbox" id="mediaquery">
             <input type="radio" id="accueil" name="page" checked="checked">
             <input type="radio" id="skills" name="page">
-            <input type="radio" id="works" name="page">
+            <input type="radio" id="works_btn" name="page">
             <input type="radio" id="more" name="page">
             <ul>
                 <li><label for="accueil">Accueil</label></li>
@@ -44,7 +44,7 @@
                         <div class="infoTexte"><h2>Multiplier les possibilités<br/>pour une solution optimale et originale</h2></div>
                     </div>
                     <div id="chrono">
-                        <img src="./img/chron_syrie.svg" alt="chronologie_syrie">
+                        <img src="./img/chron_syrie.png" alt="chronologie_syrie">
                         <div class="infoTexte"><h2>Mélanger les domaines<br/>pour maximiser son potentiel</h2></div>
                     </div>
                     <div id="maquette">
@@ -58,55 +58,11 @@
                     <label class="prev" for="toFrise">&#10094;</label>
                     <label class="next" for="toDraw">&#10095;</label>
                 </nav>
-               <!--à mettre dans section à propos->
-               <!-  <div id="squares">
-                    <h2 class="title">Outils utilisés</h2>
-                    <div>
-                        <h3 class="language">HTML5</h3>
-                        <img src="./img/html5-logo.svg">
-                        <div class="meter"><span></span></div>
-                    </div>
-
-                    <div>
-                        <h3 class="language">CSS3</h3>
-                        <img src="./img/css3-logo.svg">
-                        <div class="meter"><span></span></div>
-                    </div>
-                    <div>
-                        <h3 class="language">Javascript</h3>
-                        <img src="./img/javascript-logo.svg">
-                        <div class="meter">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <ul>
-                            <li>Contenu</li>
-                            <li>Mise en place du <i>CSS Hack</i></li>
-                        </ul>
-                    </div>
-                    <div class="details">
-                        <ul>
-                            <li>CSS Grid</li>
-                            <li>Flexbox</li>
-                            <li>Slideshow</li>
-                            <li><i>CSS Hack*</i></li>
-                            <li>Mediaqueries</li>
-                        </ul>
-                        <p id="csshack">*Modification du CSS à l'aide de l'attribut <code>:checked</code> des boutons radios et des checkbox.<br><b>Évite l'utilisation du Javascript.</b></p>
-                    </div>
-                    <div class="details">
-                        <p id="js">
-                            Utilisation du D.O.M sur les boutons de navigation
-                        </p>
-                    </div>
-                </div> -->
-
                 </div>
                 </article>
                 <article id="message">
-                    <h2 class="title">Pour me définir...</h2>
-                    <p>En 3 points je suis une personne...</p>
+                    <h2 class="title intro">Pour me définir...</h2>
+                    <p class="paragraphe intro">En 3 points je suis une personne...</p>
                     <div id="points">
                         <div class="circle">
                             <div class="effect">
@@ -132,86 +88,7 @@
                 <section id="myskills">
                     <article>
                         <h2 class="title">Mes compétences</h2>
-                        <h2 class="title2">Programmation impérative</h2>
-                        <div id="imper">
-                            <div>
-                                <img src="./svg/C_language.svg" alt="logo_C">
-                                <div>
-                                    <h3 class="title">C</h3>
-                                    <ul>
-                                        <li>Algorithmique</li>
-                                        <li>Structure de données</li>
-                                        <li>Notion de références</li>
-                                        <li>Communication sockets</li>
-                                        <li>Librairie SDL2</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./svg/C++language.svg" alt="logoC++">
-                                <div>
-                                    <h3 class="title">C++</h3>
-                                    <ul>
-                                        <li>Algorithmique</li>
-                                        <li>Structure de données</li>
-                                        <li>Notion de pointeurs</li>
-                                        <li>Types abstraits de données</li>
-                                        <li>Approche orientée objet</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./svg/as3.svg" alt="logoAS3">
-                                <div>
-                                    <h3 class="title">ActionScript 3.0</h3>
-                                    <ul>
-                                        <li>Événementiel</li>
-                                        <li>Approche orientée objet</li>
-                                        <li>Conception d'animations</li>
-                                        <li>Manipulation du son</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="title2">Programmation orientée-objet</h2>
-                        <div id="oo">
-                            <div>
-                                <img src="./svg/java.svg" alt="logoJAVA">
-                                <div>
-                                    <h3 class="title">JAVA</h3>
-                                    <ul>
-                                        <li>Algorithmique</li>
-                                        <li>Bases de l'orienté-objet</li>
-                                        <li>Notion de complexité</li>
-                                        <li>Programmation concurrente (Threads)</li>
-                                        <li>Communication sockets</li>
-                                        <li>Patrons de conceptions
-                                        <ul>    
-                                            <li>Pattern Singleton</li>
-                                            <li>Pattern Prototype</li>
-                                            <li>Pattern Factory</li>
-                                            <li>Pattern Bridge</li>
-                                            <li>Pattern Composite</li>
-                                            <li>Pattern Décorateur</li>
-                                        </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./svg/vbNet.svg" alt="logoVBNET">
-                                <div>
-                                    <h3 class="title">VB.NET</h3>
-                                    <ul>
-                                        <li>Algorithmique</li>
-                                        <li>Événementiel</li>
-                                        <li>Conception de formulaires</li>
-                                        <li>Liaison BDD</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="title2">Programmation WEB</h2>
+                        <h3 class="title">Programmation WEB</h3>
                         <h3 class="title">Front-End</h3>
                         <div id="frontpweb">
                             <div>
@@ -252,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 class="title2">Back-End</h3>
+                        <h3 class="title">Back-End</h3>
                         <div id="backpweb">
                             <div>
                                 <img src="./svg/php.svg" alt="logoPHP">
@@ -281,7 +158,7 @@
                         <h3 class="title">Gestion de bases de données</h3>
                         <div id="bdd">
                             <div>
-                                <img src="./svg/sqlplus.svg" alt="logoORACLESQLPLUS">
+                                <img src="./img/sqlplus.png" alt="logoORACLESQLPLUS">
                                 <div>
                                     <h3 class="title">Oracle SQL*PLUS</h3>
                                     <ul>
@@ -292,7 +169,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="./svg/mysql.svg" alt="logoMYSQL">
+                                <img src="./img/mysql.png" alt="logoMYSQL">
                                 <div>
                                     <h3 class="title">MySQL</h3>
                                     <ul>
@@ -303,12 +180,223 @@
                                 </div>
                             </div>
                         </div>
+                        <h3 class="title">Programmation impérative</h3>
+                        <div id="imper">
+                            <div>
+                                <img src="./svg/C_language.svg" alt="logo_C">
+                                <div>
+                                    <h3 class="title">C</h3>
+                                    <ul>
+                                        <li>Algorithmique</li>
+                                        <li>Structure de données</li>
+                                        <li>Notion de références</li>
+                                        <li>Communication sockets</li>
+                                        <li>Librairie SDL2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./svg/C++language.svg" alt="logoC++">
+                                <div>
+                                    <h3 class="title">C++</h3>
+                                    <ul>
+                                        <li>Algorithmique</li>
+                                        <li>Structure de données</li>
+                                        <li>Notion de pointeurs</li>
+                                        <li>Types abstraits de données</li>
+                                        <li>Approche orientée objet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./svg/as3.svg" alt="logoAS3">
+                                <div>
+                                    <h3 class="title">ActionScript 3.0</h3>
+                                    <ul>
+                                        <li>Événementiel</li>
+                                        <li>Approche orientée objet</li>
+                                        <li>Conception d'animations</li>
+                                        <li>Manipulation du son</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="title">Programmation orientée-objet</h3>
+                        <div id="oo">
+                            <div>
+                                <img src="./svg/java.svg" alt="logoJAVA">
+                                <div>
+                                    <h3 class="title">JAVA</h3>
+                                    <ul>
+                                        <li>Algorithmique</li>
+                                        <li>Bases de l'orienté-objet</li>
+                                        <li>Notion de complexité</li>
+                                        <li>Programmation concurrente (Threads)</li>
+                                        <li>Communication sockets</li>
+                                        <li>Patrons de conceptions
+                                        <ul>    
+                                            <li>Pattern Singleton</li>
+                                            <li>Pattern Prototype</li>
+                                            <li>Pattern Factory</li>
+                                            <li>Pattern Bridge</li>
+                                            <li>Pattern Composite</li>
+                                            <li>Pattern Décorateur</li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./svg/vbNet.svg" alt="logoVBNET">
+                                <div>
+                                    <h3 class="title">VB.NET</h3>
+                                    <ul>
+                                        <li>Algorithmique</li>
+                                        <li>Événementiel</li>
+                                        <li>Conception de formulaires</li>
+                                        <li>Liaison BDD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </article>
                 </section>
                 <section>
-                    <article>
+                    <article id="works">
                         <h2 class="title">Mes travaux</h2>
+                        <p class="paragraphe intro">Quelques travaux que je vous présente sont des projets que j'ai réalisés durant mes années à l'IUT de Paris Descartes.</p>
+                        <h3 class="title">Site web sur la réalité augmentée et virtuelle</h3>
+                        <p class="paragraphe">Mon premier projet quand j'étais en première année à l'IUT, était de concevoir un site web basé sur un sujet <span class="important">qui était en relation avec le numérique.</span><br/>J'étais dans une équipe de 4, et on s'est mis d'accord pour parler sur la réalité virtuelle et augmentée. Nous avions décidé d'étudier ce sujet car ce dernier était <b>et est toujours</b> très d'actualité à cause de l'influence technologique qui continue à prendre importance. <span class="important">On a développé ce site à partir du CMS <i>WIX</i>.</span></p>
+                        <figure class="wix1">
+                            <img src="./img/pageaccueil.jpg" alt="accueilProjet1">
+                            <figcaption>La page d'accueil du site</figcaption>
+                            <img src="./img/pkmonexample.jpg" alt="exemplepokemon">
+                            <figcaption>Un article sur <i>Pokémon Go</i> : symbole de la réalité augmentée</figcaption>
+                        </figure>
+                        <p class="paragraphe">Pour vous rendre sur le site : <a href="http://salaahh92.wixsite.com/realitevirtuelle">lien</a></p>
+                        <h3 class="title">Le jeu du morpion-moulin</h3>
+                        <p class="paragraphe">Afin de nous initier à <b>l'orienté-objet en JAVA</b>, il nous a été demandé de construire une application java permettant d'effectuer un jeu du morpion qui reprend le concept du jeu du moulin. Trois modes de jeu sont proposés : </p>
+                        <ul class="paragraphe intro">
+                            <li>Entre 2 joueurs humains</li>
+                            <li>Entre un joueur humain et l'ordinateur</li>
+                            <li>Entre 2 ordinateurs</li>
+                        </ul>
+                        <p class="paragraphe intro">Le joueur a le choix sur le fonctionnement du joueur simulé par l'ordinateur.</p>
+                        <ul class="paragraphe intro">
+                            <li>Soit par choix aléatoires</li>
+                            <li>Soit par l'algorithme du minimax</li>
+                        </ul>
+                        <p class="paragraphe intro"><a href="https://openclassrooms.com/courses/l-algorithme-min-max">L'algorithme du minimax</a> est l'un des algorithmes basiques en matière <b>d'Intelligence Artificielle.</b></p>
+                        <figure class="java">
+                            <img src="./img/minmax_debut.jpg" alt="debut_minmax">
+                            <figcaption>Initiation des choix de modes de jeu</figcaption>
+                            <img src="./img/minmax_fin.jpg" alt="fin_minimax">
+                            <figcaption>Le joueur X qui est incarné par l'ordinateur en mode minmax a remporté la partie</figcaption>
+                        </figure>
+                        <h3 class="title">Le jeu du Memory</h3>
+                        <p class="paragraphe">Au milieu de la première année de DUT Informatique, on nous a demandé de créer un jeu du Memory en <b>VB.NET à partir des formulaires Windows</b>.</p>
+                        <p class="paragraphe">Ce projet nous a permis de nous initier à la conception d'IHMs (Interfaces Homme Machine).<br/>On nous a demandé à ce que l'application sauvegarde les scores par écriture dans un fichier texte. Mon collègue et moi avions <b>décidé d'étendre les possibilités</b> de notre application en sauvegardant directement les scores <span class="important">dans une base de données Access</span>.</p>
+                        <figure class="vbbdd">
+                            <img src="./img/menuprincipal.jpg" alt="menuprincipal">
+                            <img src="./img/tableScores.jpg" alt="jeu">                       
+                        </figure>
+                        <h3 class="title">Une application de gestion de stages</h3>
+                        <p class="paragraphe">En dernière année de DUT Informatique, à l'occasion de notre initiation à l'organisation en entreprise, on nous a demandé de concevoir une application de gestion d'embauches pour un service RH, en VB.NET encore une fois.<br/>Cette application regroupe différents services auquel une certaine personne y est spécialisée, en voici des exemples :</p>
+                        <ul class="paragraphe intro">
+                            <li>Un annonceur s'occupe de la création d'annonce de stages</li>
+                            <li>Le directeur s'occupe des entretiens, accepte les demandes des candidats ou les refuse, etc.</li>
+                        </ul>
+                        <figure class="vbbdd2">
+                            <img src="./img/accueilAppli.jpg" alt="accueilAppli">
+                            <img src="./img/accueilError.jpg" alt="accueilError">
+                            <img src="./img/actionsAppli.jpg" alt="actionsAppli">
+                            <img src="./img/actionsAppliError.jpg" alt="actionsAppliError">                         
+                        </figure>
+                        <h3 class="title">Une application web créatrice de QCMs</h3>
+                        <p class="paragraphe">Ce projet au début de ma seconde année fut <b>un tournant</b> pour ma part, car pour la première fois, à l'aide d'une équipe de 4 personnes, on s'est attaqué à la <span class="important">partie back-end</span> pour la conception d'une application web.<br/>Cette application avait pour but de générer des QCMs pour un groupe de personnes (d'étudiants par exemple). Il a fallu distinguer les différentes services que pouvait composer cette application, et les implémenter en respectant le <b>pattern MVC (Modèle Vue Contrôle) :</b></p>
+                        <ul class="paragraphe intro">
+                            <li>La partie Modèle de l'application contient toutes les ressources stockées dans une base de données</li>
+                            <li>La partie Contrôle intéragit entre le Modèle et la Vue. Elle interroge d'abord le Modèle pour récupérer des données, pour ensuite les afficher dans la partie Vue.</li>
+                            <li>La partie Vue est la partie <b>Front-End</b> de l'application Web. Le contenu affiché est le travail du Contrôle.</li>
+                        </ul>
+                        <figure class="MVC">
+                            <img src="./img/Conn.jpg" alt="connexion">
+                            <figcaption>Distinguer si l'utilisateur est un élève ou un enseignant</figcaption>
+                            <img src="./img/selQuestions.jpg" alt="selectionQuestions">
+                            <figcaption>Si un enseignant a été identifié, on le redirige au formulaire de création de QCM</figcaption>
+                            <img src="./img/envoiQuestions.jpg" alt="envoiQuestions">
+                            <figcaption>L'enseignant envoie des questions aux étudiants du groupe concerné.Il peut a tout moment changer de question en terminant la précédente (bloquer la question)</figcaption>
+                            <img src="./img/ecranqcm.jpg" alt="ecranqcm">
+                            <figcaption>Lors de sa connexion, l'élève aura à l'écran les questions que l'enseignant aura envoyées s'il appartient au bon groupe</figcaption> 
+                            <img src="./img/resFin.jpg" alt="resultatsEleves">
+                            <figcaption>Lorsque l'élève aura terminé de répondre à toutes les questions envoyées par son enseignant, il aura sa note.</figcaption>
+                            <img src="./img/noEnd.jpg" alt="nontermine">
+                            <figcaption>Dans le cas où l'enseignant n'aurait pas envoyé toutes ses questions, l'élève a cet écran.</figcaption>                            
+                        </figure>
+                        <h3 class="title">Un site touristique sur l'Alsace</h3>
+                        <p class="paragraphe">Toujours sur le thème du développement web mais en <i>Front-End</i> cette fois-ci, on nous a demandé de développer un site sur une région, encore une fois avec le <b>CMS <i>WIX</i></b>. Nous étions une équipe de 4, et notre choix s'est porté sur l'Alsace en raison de sa grande culture.</p>
+                        <figure class="Alsace">
+                            <img src="./img/accueilAlsace.jpg" alt="Alsace_Acc">
+                            <figcaption>L'écran d'accueil. Le jeu de couleurs a été particulier pour distinguer cette page des autres</figcaption>
+                             <img src="./img/expleVilles.jpg" alt="Alsace_ExV">
+                             <figcaption>Un exemple de rubriques, basé sur les villes touristiques</figcaption>
+                        </figure>
+                        <p class="paragraphe">Après le développement sur CMS, on nous a demandé de <b>refaire le site <i>"from scratch"</i>.</b> C'est-à-dire de le refaire en "dur", <b>en utilisant les outils HTML5/CSS3</b> <span class="important">tout en évitant le JavaScript !</span></p>
+                        <figure class="Alsace">
+                            <img src="./img/siteNew.jpg" alt="Alsace_newAcc">
+                            <figcaption>Nous sommes parvenus à reproduire ce slideshow SANS JavaScript !</figcaption>
+                             <img src="./img/siteNew2.jpg" alt="Alsace_newExV">
+                             <figcaption>À l'exception de quelques détails près, nous avons réussi à reproduire ce site, grâce aux outils Grid et Flex de CSS3</figcaption>
+                        </figure>
+                        <p class="paragraphe">Cette seconde partie du projet m'a permis d'énormément progresser en ce qui touche au Front-End : <b>j'ai réussi à assimiler des technologies que propose le CSS3 notamment avec le système de grilles du CSS Grid.</b><span class="important"> C'est grâce à cet exercice que j'ai pu réaliser ce portfolio !
+                        </span></p>
+                    </article>
+                </section>
+                <section>
+                    <article id="about">
+                        <div id="squares">
+                            <h2 class="title">À propos</h2>
+                            <h3 class="title">Outils utilisés</h3>
+                            <div>
+                                <h3 class="language">HTML5</h3>
+                                <img src="./svg/html5.svg">
+                                <div class="meter"><span></span></div>
+                            </div>
 
+                            <div>
+                                <h3 class="language">CSS3</h3>
+                                <img src="./svg/css3.svg">
+                                <div class="meter"><span></span></div>
+                            </div>
+                            <div>
+                                <h3 class="language">Javascript</h3>
+                                <img src="./svg/js.svg">
+                                <div class="meter">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <ul>
+                                    <li>Contenu</li>
+                                    <li>Mise en place du <i>CSS Hack</i></li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <ul>
+                                    <li>CSS Grid</li>
+                                    <li>Flexbox</li>
+                                    <li>Slideshow</li>
+                                    <li><i>CSS Hack*</i></li>
+                                    <li>Mediaqueries</li>
+                                </ul>
+                                <p id="csshack">*Modification du CSS à l'aide de l'attribut <code>:checked</code> des boutons radios et des checkbox.<br><b>Évite l'utilisation du Javascript.</b></p>
+                            </div>
+                            <div class="details">
+                                <p id="js">
+                                    Utilisation du D.O.M sur les boutons de navigation
+                                </p>
+                            </div>
+                        </div>
                     </article>
                 </section>
         </main>

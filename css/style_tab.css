@@ -100,7 +100,7 @@ header label:nth-child(1),header label:nth-child(2),header label:nth-child(3),he
     /* width:100%; */
     /* cursor:pointer; */
 }
-label[for="accueil"], label[for="skills"],label[for="works"],label[for="more"]{padding:20px 0px;}
+label[for="accueil"], label[for="skills"],label[for="works_btn"],label[for="more"]{padding:20px 0px;}
 input[name="page"]{display: none;}
 
 header li:nth-child(1):hover
@@ -134,7 +134,7 @@ header li:nth-child(4):hover
     border-top:5px solid orange;
     background:#435370;
 }
-#works:checked ~ ul li:nth-child(3)
+#works_btn:checked ~ ul li:nth-child(3)
 {
     border-top:5px solid crimson;
     background:#435370;
@@ -148,6 +148,14 @@ header > ul > li > label
 {
     cursor:pointer;
 }
+@media (min-width: 820px) and (max-width: 920px)
+{
+    header > h2
+    {
+        font-size:90%;
+    }
+}
+
 @media (max-width:825px)
 {
     header
@@ -193,17 +201,13 @@ header > ul > li > label
         background:#C26060;
     }
 
-    label[for="accueil"], label[for="skills"],label[for="works"],label[for="more"]
+    label[for="accueil"], label[for="skills"],label[for="works_btn"],label[for="more"]
     {padding:0;}
 }
 
-@media (min-width:305px) and (max-width:430px)
+@media  (min-width:305px) and (max-width:430px)
 {
-    header > h2
-    {
-        font-size:110%;
-    }
-
+    
     header > ul
     {
         font-size:90%;
@@ -216,7 +220,7 @@ header > ul > li > label
     }
 }
 
-@media (min-width:290px) and (max-width:320px)
+@media  (min-width:290px) and (max-width:320px)
 {
     header > h2
     {
@@ -230,10 +234,11 @@ header > ul > li > label
     }
 }
 
-@media (max-width:290px)
+@media (min-width:150px) and (max-width:300px)
 {
     header > h2
     {
         font-size:90%;
     }
 }
+
