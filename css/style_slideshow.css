@@ -123,7 +123,7 @@ label[for="toFrise"],label[for="toMaq"],label[for="toDraw"]{display: none;}
 }
 
 
-@media (max-width:895px)
+@media  (max-width:895px)
 {
 	#slideshow h2
 	{
@@ -131,7 +131,7 @@ label[for="toFrise"],label[for="toMaq"],label[for="toDraw"]{display: none;}
 	}
 }
 
-@media (min-width:510px) and (max-width:600px)
+@media  (min-width:510px) and (max-width:600px)
 {
 	#slideshow h2
 	{
@@ -139,7 +139,7 @@ label[for="toFrise"],label[for="toMaq"],label[for="toDraw"]{display: none;}
 	}
 }
 
-@media (max-width:500px)
+@media  (max-width:500px)
 {
 	#slideshow h2
 	{
