@@ -19,10 +19,22 @@
             <input type="radio" id="works_btn" name="page">
             <input type="radio" id="more" name="page">
             <ul>
-                <li><label for="accueil">Accueil</label></li>
-                <li><label for="skills">Compétences</label></li>
-                <li><label for="works">Travaux</label></li>
-                <li><label for="more">À propos</label></li>
+                <li>
+                    <label for="accueil">Accueil</label>
+                    <a href="#Accueil"></a>
+                </li>
+                <li>
+                    <label for="skills">Compétences</label>
+                    <a href="#myskills"></a>
+                </li>
+                <li>
+                    <label for="works_btn">Travaux</label>
+                    <a href="#works"></a>
+                </li>
+                <li>
+                    <label for="more">À propos</label>
+                    <a href="#about"></a>
+                </li>
             </ul>
             <label for="mediaquery" id="tabButton">
                 <span></span>
@@ -31,7 +43,7 @@
             </label>
         </header>
         <main>
-            <section>
+            <section id="Accueil">
                 <article>
                 <h2 class="maintitle">Bienvenue !</h2>
                 <h3 class="title">Un bref récapitulatif sur mes principes</h3>
@@ -261,8 +273,8 @@
                         </div>
                     </article>
                 </section>
-                <section>
-                    <article id="works">
+                <section id="works">
+                    <article>
                         <h2 class="title">Mes travaux</h2>
                         <p class="paragraphe intro">Quelques travaux que je vous présente sont des projets que j'ai réalisés durant mes années à l'IUT de Paris Descartes.</p>
                         <h3 class="title">Site web sur la réalité augmentée et virtuelle</h3>
@@ -352,8 +364,8 @@
                         </span></p>
                     </article>
                 </section>
-                <section>
-                    <article id="about">
+                <section id="about">
+                    <article>
                         <div id="squares">
                             <h2 class="title">À propos</h2>
                             <h3 class="title">Outils utilisés</h3>
@@ -402,7 +414,7 @@
         </main>
         <script type="text/javascript" src="js/script.js"></script>
         <footer>
-            <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=muhammadyadallee.fr','SiteLock','width=600,height=600,left=160,top=170');"><img title="1&1 SiteLock" src="https://shield.sitelock.com/shield/muhammadyadallee.fr" alt="Sécurité du site Web"></a>
+            <!-- <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=muhammadyadallee.fr','SiteLock','width=600,height=600,left=160,top=170');"><img title="1&1 SiteLock" src="https://shield.sitelock.com/shield/muhammadyadallee.fr" alt="Sécurité du site Web"></a> -->
         </footer>
     </body>
 
