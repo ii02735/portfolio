@@ -18,19 +18,19 @@ function amountscrolled(){
 
 window.addEventListener("scroll",
 	function(){
-		if(amountscrolled() >= 13)
+		if(amountscrolled() >= 8)
 		{
 			document.getElementById("skills").checked = "checked";
 		}
-		if(amountscrolled() >= 30)
+		if(amountscrolled() >= 22)
 		{
 			document.getElementById("works_btn").checked = "checked";
 		}
-		if(amountscrolled() >= 98)
+		if(amountscrolled() >= 85)
 		{
 			document.getElementById("more").checked = "checked";
 		}
-		if(amountscrolled() <= 13)
+		if(amountscrolled() < 8)
 		{
 			document.getElementById("accueil").checked = "checked";
 		}
